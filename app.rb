@@ -11,20 +11,12 @@ get '/random-cat' do
   erb(:index)
 end
 
-get '/named-cat' do
-  #p params
+post '/named-cat' do
+  p params
   @name = params[:name]
   erb(:index)
 end
 
-get '/secret' do
-  #"You disgust me"
-end
-
-get '/new' do
-  "What?"
-end
-
-get '/hava' do
-  "Nagila"
+get '/named-cat-form' do
+  erb :form
 end
