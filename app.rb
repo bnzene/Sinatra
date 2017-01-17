@@ -12,13 +12,13 @@ get '/random-cat' do
 end
 
 get '/named-cat' do
-  p params
+  #p params
   @name = params[:name]
   erb(:index)
 end
 
 get '/secret' do
-  "You disgust me"
+  #"You disgust me"
 end
 
 get '/new' do
