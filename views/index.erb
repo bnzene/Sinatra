@@ -1,4 +1,12 @@
-<h1> "My name is <%= ["Amigo", "Oscar", "Viking"].sample %> " </h1>
+<form>
+  <input type="text" name="name"></input>
+  <input type="submit" value = "Submit"></input>
+</form>
+
+<% if @name %>
+<h1>My name is <%= @name %></h1>
+<% end %>
 <div style='border: 3px dashed red'>
 <img src='http://bit.ly/1eze8aE', height=150, width=250>
 </div>
+<form>
